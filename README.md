@@ -2,7 +2,9 @@
 
 A beautiful, modern weather application built with React and Vite that provides real-time weather information for any location worldwide. Features automatic location detection, city search with autocomplete, and a stunning glassmorphism UI design.
 
-![Weather App Preview](https://weather-one-phi-44.vercel.app/)
+## 🚀 Live Demo
+
+[Weather Go](https://weather-one-phi-44.vercel.app/)
 
 ## ✨ Features
 
@@ -23,17 +25,20 @@ Make sure you have Node.js (version 16 or higher) installed on your system.
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Ashim-Raj12/Weather.git
    cd Weather
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -80,6 +85,7 @@ This app uses the [Open-Meteo API](https://open-meteo.com/) which provides:
 - **Free & No API Key Required** - Perfect for development and learning
 
 The API endpoints used:
+
 - `https://geocoding-api.open-meteo.com/v1/search` - For city search and reverse geocoding
 - `https://api.open-meteo.com/v1/forecast` - For current weather data
 
@@ -127,4 +133,3 @@ weather-app/
 ---
 
 **Note**: This app requires location access to automatically detect your weather. If you prefer not to share your location, you can still search for any city manually.
-
