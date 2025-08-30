@@ -2,8 +2,6 @@
 
 A beautiful, modern weather application built with React and Vite that provides real-time weather information for any location worldwide. Features automatic location detection, city search with autocomplete, and a stunning glassmorphism UI design.
 
-![Weather App Preview](https://weather-one-phi-44.vercel.app/)
-
 ## ✨ Features
 
 - **🌍 Global Weather Data** - Get current weather conditions for any city worldwide
