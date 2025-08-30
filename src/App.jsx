@@ -86,7 +86,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      <h1 className="text-3xl font-bold mt-6">🌤 Weather App</h1>
+      <h1 className="text-3xl font-bold mt-6">🌤 Weather Go</h1>
       <WeatherForm onSearch={handleSearch} onLocationSearch={handleLocationSearch} />
       {error && <p className="text-red-500 mt-4 text-center font-medium">{error}</p>}
       <WeatherDisplay weather={weather} location={location} />

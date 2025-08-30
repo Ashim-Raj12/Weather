@@ -2,15 +2,9 @@ import { useState, useEffect, useRef } from "react";
 
 /**
  * WeatherForm Component
- *
  * Provides a styled input field for searching cities:
- * - Fetches city suggestions from Open-Meteo's Geocoding API
- * - Supports keyboard navigation (↑ ↓ Enter Esc)
- * - Uses debounce to reduce API calls
- * - Calls `onSearch(cityName)` when user submits
- *
- * @param {Function} props.onSearch - Callback triggered with city name on search
  */
+
 export default function WeatherForm({ onSearch }) {
   // Local state
   const [city, setCity] = useState(""); // Input value
@@ -48,7 +42,6 @@ export default function WeatherForm({ onSearch }) {
 
   /**
    * Fetch city suggestions from Open-Meteo Geocoding API
-   * @param {string} query - User-typed city name
    */
   const fetchSuggestions = async (query) => {
     if (query.length < 2) {
@@ -92,7 +85,6 @@ export default function WeatherForm({ onSearch }) {
 
   /**
    * Submit handler: triggers onSearch callback
-   * @param {string} cityName - Optional city name, defaults to current input
    */
   const handleSubmit = async (cityName = city) => {
     if (cityName.trim() !== "") {
